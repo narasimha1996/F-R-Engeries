@@ -137,7 +137,6 @@ body {
 }
 
 .pdlft{
-    /* font-size: 16px; */
     padding-left: 20px;
     margin: 0; 
     font-weight: 600;
@@ -238,7 +237,51 @@ background-color: #182b45;
 .accordion-button:not(.collapsed)::after {
     background-image: url("../images/down-arrow.png") !important; 
 }
+.tab_img h5{
+    background-color: #e1e7e9;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 0px;
+}
+.tab_img .img-responsive{
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.tab_img .website-links {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.b-wrapper{
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+    padding: 2em;
+    transition: .5s all;
+    text-align: center;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+} 
+.b-wrapper p {
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.tab_img .website-links:hover .b-wrapper {
+ bottom: 0%;
+}  
 
+.tab_img .img-responsive:hover .b-wrapper {
+    display: block !important;
+}
 @media (max-width: 600px) {
     .form-inline {
       flex-direction: column;
